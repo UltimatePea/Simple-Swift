@@ -1,0 +1,17 @@
+print("Hello, World!!")
+
+//Fermat's Last Theorem
+
+
+func power(a: Int, b:Int) -> Int {
+if b==0 { return 1}
+return a * power(a, b:b-1)
+}
+
+
+var pl : [[Int]] = [[](1000)](1000)
+
+for i in 1...1000{
+for j in 1...1000{
+pl[i][j] = power(i, b:j)
+}}
